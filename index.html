@@ -12,17 +12,24 @@
       margin: 0 auto;
     }
 
-    
     .about-image h2 {
       margin: 20px 0;
       font-size: 2rem;
       text-align: center;
     }
-
-    
-    .about-image img {
-      max-width: 10%;   
-      height: auto;     
+    .image-row {
+      display: flex;
+      justify-content: center;   
+      align-items: center;
+      gap: 16px;                
+      flex-wrap: wrap;           
+      margin: 10px 0 20px;
+    }
+    .image-row img {
+      width: 180px;              
+      max-width: 40vw;           
+      height: auto;              
+      border-radius: 6px;
     }
 
     article blockquote {
@@ -67,13 +74,18 @@
     </nav>
     <h1>Darien's SillySite!</h1>
   </header>
+
   <article>
     <div class="about-image">
       <h2>About Me</h2>
     </div>
-      <img src="images/punta.jpg" title="Me in Punta Cana"/>
-      <img src="images/me.jpg" title="Hashtag Selfie"/>
+
+    <!-- NEW: wrap images in a row container -->
+    <div class="image-row">
+      <img src="images/punta.jpg" alt="Me in Punta Cana" title="Me in Punta Cana" />
+      <img src="images/me.jpg" alt="Hashtag Selfie" title="Hashtag Selfie" />
     </div>
+
     <p>
       Hi! My name is Darien, my pronouns are they/them, I am twenty-two years old, my birthday is December
       27<sup>th</sup> 2002 and I <em>love</em> all things creative! I am most passionate about 
@@ -100,7 +112,6 @@
       “Rejection is merely a redirection” 
       <cite> - Bryant McGill</cite>
     </blockquote>
-
   </article>
 
   <footer>
