@@ -3,85 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>Darien's SillySite</title>
-   <style>
-        header {
-            position: relative;          
-            padding: 20px;
-            background-color: #efc6c6;
-            text-align: center;          
-        }
+   <style>text-align: center;   
+      margin: 0;
+      font-family: Arial, sans-serif;
 
-        header h1 {
-            margin: 0;
-            display: inline-flex;        
-            align-items: center;
-            justify-content: center
-            gap 10px;
-        
+    header {
+      padding: 20px;
+      background-color: #efc6c6;
+    }
 
-        header h1 img {
-            height: 50px;
-            margin-right: 10px;
-        }
+    header h1 {
+      margin: 0;
+      display: flex;              
+      align-items: center;
+      justify-content: center;
+      gap: 10px;                  
+    }
 
-        nav {
-            position: absolute;          
-            right: 20px;                 
-            top: 50%;
-            transform: translateY(-50%); 
-        }
+    nav {
+      margin-top: 10px;
+    }
 
-        nav a {
-            margin-left: 15px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #631111;
-        }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #631111;
+    }
 
-        nav a:hover {
-            color: #ff8a4f;
-        }
-    </style>
+    nav a:hover {
+      color: #ff8a4f;
+    }
+
+    
+    table {
+      margin: 20px auto;           
+      border-collapse: collapse;
+      width: 60%;
+    }
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    th, td {
+      border: 1px solid #631111;
+      padding: 8px 12px;
+      text-align: left;           
+    }
+    th {
+      background-color: #ffdad6;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-        <a href="index.html">Home</a> |
-        <a href="notes.html">Notes</a>
+  <header>
+    <h1>
+      Darien's SillySite!
+    </h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="notes.html">Notes</a>
     </nav>
-    <h1>Darien's SillySite!</h1>
-    </header>
-            <h1> HTML Learning!</h1>
-            </header>
+  </header>
 
-            <table>
-  <caption>What I've learned</caption>
-  <thead>
-    <tr>
-      <th>Tags</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>div</strong></td>
-      <td>generic container for grouping content without semantic meaning</td>
-    <tr>
-      <td><strong>strong</strong></td>
-      <td>important text, bolds text</td>
-    </tr>
-    <tr>
-      <td><strong>sub</strong></td>
-      <td>lowered text (H₂O)</td>
-    </tr>
-    <tr>
-      <td><strong>sup</strong></td>
-      <td>raised text 29ᵗʰ</td>
-    </tr>
-    <tr>
-      <td><strong>h1-h4</strong></td>
-      <td>headings from most to least importance</td>
-    </tr>
-  </tbody>
-</table>
+  <h1>HTML Learning!</h1>
+
+  <table>
+    <caption>What I've learned</caption>
+    <thead>
+      <tr>
+        <th>Tags</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>div</strong></td>
+        <td>generic container for grouping content without semantic meaning</td>
+      </tr>
+      <tr>
+        <td><strong>strong</strong></td>
+        <td>important text, bolds text</td>
+      </tr>
+      <tr>
+        <td><strong>sub</strong></td>
+        <td>lowered text (H₂O)</td>
+      </tr>
+      <tr>
+        <td><strong>sup</strong></td>
+        <td>raised text 29ᵗʰ</td>
+      </tr>
+      <tr>
+        <td><strong>h1-h4</strong></td>
+        <td>headings from most to least importance</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
+</html>
