@@ -5,37 +5,32 @@
   <title>Darien's SillySite</title>
   <style>
     article {
-  text-align: center;      
-  max-width: 800px;        
-  margin: 0 auto;
-}
+      text-align: center;      
+      max-width: 800px;        
+      margin: 0 auto;
+    }
 
+    /* Just the heading centered */
+    .about-banner h2 {
+      margin: 20px 0;
+      font-size: 2rem;
+      text-align: center;
+    }
 
-.about-image {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  gap: 16px;
-  margin: 20px 0;
-}
+    /* Image below blockquote */
+    .about-image img {
+      max-height: 120px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
 
-.about-image h2 {
-  margin: 0;
-  font-size: 2rem;
-}
+    article blockquote {
+      text-align: left;
+      margin: 20px auto;
+      max-width: 600px;   
+      font-style: italic;
+    }
 
-.about-image img {
-  max-height: 120px;
-  border-radius: 8px;
-}
-
-
-article blockquote {
-  text-align: left;
-  margin: 20px auto;
-  max-width: 600px;   
-  font-style: italic;
-}
     header {
       position: relative;
       padding: 20px;
@@ -60,22 +55,6 @@ article blockquote {
       color: #631111;
     }
     nav a:hover { color: #ff8a4f; }
-
-   
-    .about-banner {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin: 20px 0;
-    }
-    .about-banner h2 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    .about-banner img {
-      max-height: 120px;   
-      border-radius: 8px;  
-    }
   </style>
 </head>
 <body>
@@ -89,38 +68,43 @@ article blockquote {
   <article>
     <div class="about-banner">
       <h2>About Me</h2>
+    </div>
+
+    <p>
+      Hi! My name is Darien, I am twenty-two years old, my birthday is December
+      27<sup>th</sup> 2002 and I <em>love</em> all things creative! I am most passionate about 
+      video editing.
+    </p>
+    <p>
+      Beyond video editing, I also have a love for photography, design, 
+      web design, and special effects makeup. I don’t have as much experience
+      in photography and web design, but I love learning more about each
+      and leveling up my skills. 
+      <abbr title="For your information">FYI</abbr>, you can find 
+      <a href="https://www.tiktok.com/@derpmutual">my edits</a> 
+      and some of 
+      <a href="https://shoyo.crd.co/">my Carrd websites</a> here :).
+    </p>
+    <p>
+      Currently I've been into playing games on my dsi, right now i'm playing Harvest Moon:
+      A Tale of Two Towns. Besides that, I've been loving decorating things like phone cases,
+      notebooks, letters for friends with all sorts of materials like 3D stickers,washi tape,
+      and jewels.
+    </p>
+
+    <blockquote>
+      “Rejection is merely a redirection” 
+      <cite> - Bryant McGill</cite>
+    </blockquote>
+
+    <!-- Image moved here below the blockquote -->
+    <div class="about-image">
       <img src="images/puntacana.jpg" alt="My photo"/>
     </div>
-        <p>
-            Hi! My name is Darien, I am twenty-two years old, my birthday is December
-            27<sup>th</sup> 2002 and I <em>love</em> all things creative! I am most passionate about 
-            video editing.
-        </p>
-        <p>
-            Beyond video editing, I also have a love for photography, design, 
-            web design, and special effects makeup. I don’t have as much experience
-            in photography and web design, but I love learning more about each
-            and leveling up my skills. 
-            <abbr title="For your information">FYI</abbr>, you can find 
-            <a href="https://www.tiktok.com/@derpmutual">my edits</a> 
-            and some of 
-            <a href="https://shoyo.crd.co/">my Carrd websites</a> here :).
+  </article>
 
-        </p>
-        <p>
-            Currently I've been into playing games on my dsi, right now i'm playing Harvest Moon:
-            A Tale of Two Towns. Besides that, I've been loving decorating things like phone cases,
-            notebooks, letters for friends with all sorts of materials like 3D stickers,washi tape,
-            and jewels.
-        </p>
-        <blockquote>
-            “Rejection is merely a redirection” 
-            <cite> - Bryant McGill</cite>
-        </blockquote>
-    </article>
-
-    <footer>
-        <p>&copy; 2025 Darien Boulay. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Darien Boulay. All rights reserved.</p>
+  </footer>
 </body>
 </html>

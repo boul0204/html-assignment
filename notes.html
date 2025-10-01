@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Darien's SillySite</title>
-   <style>text-align: center;   
+  <meta charset="UTF-8">
+  <title>Darien's SillySite</title>
+  <style>
+    body {
       margin: 0;
       font-family: Arial, sans-serif;
+      text-align: center; 
+    }
 
     header {
+      display: flex;                
+      justify-content: space-between; 
+      align-items: center;
       padding: 20px;
       background-color: #efc6c6;
     }
 
     header h1 {
       margin: 0;
-      display: flex;              
-      align-items: center;
-      justify-content: center;
-      gap: 10px;                  
-    }
-
-    nav {
-      margin-top: 10px;
+      padding: 10px 20px;
+      border: 3px solid #631111;    
+      border-radius: 8px;
+      background-color: #fff0f0;    
+      color: #631111;
     }
 
     nav a {
-      margin: 0 15px;
+      margin-left: 15px;
       text-decoration: none;
       font-weight: bold;
       color: #631111;
@@ -33,6 +36,12 @@
 
     nav a:hover {
       color: #ff8a4f;
+    }
+
+    
+    .learning-title {
+      text-align: center;
+      margin-top: 20px;
     }
 
     
@@ -57,16 +66,14 @@
 </head>
 <body>
   <header>
-    <h1>
-      Darien's SillySite!
-    </h1>
+    <h1>Darien's SillySite!</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="notes.html">Notes</a>
     </nav>
   </header>
 
-  <h1>HTML Learning!</h1>
+  <h1 class="learning-title">HTML Learning!</h1>
 
   <table>
     <caption>What I've learned</caption>
