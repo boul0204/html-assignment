@@ -7,54 +7,36 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      text-align: center; 
+      text-align: center;      
+      max-width: 800px;        
+      margin: 0 auto;
     }
 
     header {
-      display: flex;                
-      justify-content: space-between; 
-      align-items: center;
+      position: relative;
       padding: 20px;
       background-color: #efc6c6;
+      text-align: center;
     }
-
     header h1 {
       margin: 0;
       display: inline-flex;
-      align-items: center;  
+      align-items: center;
       color: #631111;
     }
-
+    nav {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
     nav a {
       margin-left: 15px;
       text-decoration: none;
       font-weight: bold;
       color: #631111;
     }
-
-    nav a:hover {
-      color: #ff8a4f;
-    }
-
-    
-    .learning-title {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    
-    table {
-      margin: 20px auto;           
-      border-collapse: collapse;
-      width: 60%;
-    }
-    caption {
-      font-weight: bold;
-      margin-bottom: 10px;          
-    }
-    th {
-      background-color: #ffdad6;
-    }
+    nav a:hover { color: #ff8a4f; }
   </style>
 </head>
 <body>
@@ -99,5 +81,8 @@
       </tr>
     </tbody>
   </table>
+<footer>
+    <p>&copy; 2025 Darien Boulay. All rights reserved.</p>
+  </footer>
 </body>
 </html>
