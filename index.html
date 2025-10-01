@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Darien's SillySite</title>
-   <style>
-        header {
-            position: relative;          
-            padding: 20px;
-            background-color: #efc6c6;
-            text-align: center;          
-        }
+  <meta charset="UTF-8" />
+  <title>Darien's SillySite</title>
+  <style>
+    header {
+      position: relative;
+      padding: 20px;
+      background-color: #efc6c6;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      display: inline-flex;
+      align-items: center;
+    }
+    nav {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #631111;
+    }
+    nav a:hover { color: #ff8a4f; }
 
-        header h1 {
-            margin: 0;
-            display: inline-flex;        
-            align-items: center;
-        }
-
-        header h1 img {
-            height: 50px;
-            margin-right: 10px;
-        }
-
-        nav {
-            position: absolute;          
-            right: 20px;                 
-            top: 50%;
-            transform: translateY(-50%); 
-        }
-
-        nav a {
-            margin-left: 15px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #631111;
-        }
-
-        nav a:hover {
-            color: #ff8a4f;
-        }
-    </style>
+   
+    .about-banner {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .about-banner h2 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .about-banner img {
+      max-height: 120px;   
+      border-radius: 8px;  
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-        <a href="index.html">Home</a> |
-        <a href="notes.html">Notes</a>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="notes.html">Notes</a>
     </nav>
     <h1>Darien's SillySite!</h1>
-    </header>
+  </header>
 
-    <!-- About Me -->
-    <article>
-        <h2>About Me</h2>
-        <div class="about-image">
-        <h2>About Me</h2>
-        <img src="images/puntacana.jpg" alt="my photo"
+  <article>
+    <!-- One heading + image beside it -->
+    <div class="about-banner">
+      <h2>About Me</h2>
+      <img src="images/puntacana.jpg" alt="My photo" />
+    </div>
         <p>
             Hi! My name is Darien, I am twenty-two years old, my birthday is December
             27<sup>th</sup> 2002 and I <em>love</em> all things creative! I am most passionate about 
