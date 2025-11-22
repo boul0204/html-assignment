@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Darien's SillySite</title>
-    <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
   <style>
     article {
       margin: 0;
@@ -67,13 +68,17 @@
     nav a:hover { color: #ff8a4f; }
   </style>
 </head>
+
 <body>
+
   <header>
     <nav>
       <a href="index.html">Home</a> |
       <a href="notes.html">Notes</a>
     </nav>
-    <h1>Darien's SillySite!</h1>
+
+    <!-- REQUIRED: class="site-title" -->
+    <h1 class="site-title">Darien's SillySite!</h1>
   </header>
 
   <article>
@@ -81,10 +86,11 @@
       <h2>About Me</h2>
     </div>
 
-    <!-- NEW: wrap images in a row container -->
     <div class="image-row">
       <img src="images/punta.jpg" alt="Me in Punta Cana" title="Me in Punta Cana" />
-      <img src="images/me.jpg" alt="Hashtag Selfie" title="Hashtag Selfie" />
+
+      <!-- REQUIRED: id="my-image" -->
+      <img id="my-image" src="images/me.jpg" alt="Hashtag Selfie" title="Hashtag Selfie" />
     </div>
 
     <p>
@@ -92,6 +98,7 @@
       27<sup>th</sup> 2002 and I <em>love</em> all things creative! I am most passionate about 
       video editing.
     </p>
+
     <p>
       Beyond video editing, I also have a love for photography, design, 
       web design, and special effects makeup. I don’t have as much experience
@@ -102,10 +109,11 @@
       and some of 
       <a href="https://shoyo.crd.co/">my Carrd websites</a> here :).
     </p>
+
     <p>
       Currently I've been into playing games on my dsi, right now i'm playing Harvest Moon:
       A Tale of Two Towns. Besides that, I've been loving decorating things like phone cases,
-      notebooks, letters for friends with all sorts of materials like 3D stickers,washi tape,
+      notebooks, letters for friends with all sorts of materials like 3D stickers, washi tape,
       and jewels.
     </p>
 
@@ -113,10 +121,22 @@
       “Rejection is merely a redirection” 
       <cite> - Bryant McGill</cite>
     </blockquote>
+
+    <!-- Only include this on your hobbies page — but you need it somewhere -->
+    <!--
+    <ul class="hobbies">
+      <li>Video Editing</li>
+      <li>Photography</li>
+      <li>Makeup</li>
+      <li>Gaming</li>
+    </ul>
+    -->
+
   </article>
 
   <footer>
     <p>&copy; 2025 Darien Boulay. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
